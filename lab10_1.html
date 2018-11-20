@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> 실습 10-1 </title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var win;
+            function open_window() {
+                var url = prompt("어디 열까염 새창으로 ㅇㅇㅇ");
+                if (url) win = window.open(url);
+            }
+        </script>
+        <button onclick="open_window();">새창 열기</button>
+        <br><br>
+        <button onclick="win.close();">새창 닫기</button>
+    </body>
+</html>

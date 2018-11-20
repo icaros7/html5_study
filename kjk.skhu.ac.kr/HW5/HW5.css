@@ -1,0 +1,30 @@
+
+body { 
+    background-color:rgb(20,20,20);
+    font-family: '맑은고딕';
+    color: rgb(255,255,255);
+}
+a:link { color: white; text-decoration: underline; }
+a:visited{ color: rgb(100,100,100) }
+H1 {
+    font-size: 36pt;
+    text-shadow: 5px 1px 12px blue
+}
+H2 { font-size: 24pt }
+li.index { list-style-type: disc }
+#index {
+    font-size: 14pt;
+    font-weight: bold;
+    border-collapse: separate;
+    empty-cells: hide;
+    border-spacing: 4px;
+    border: thick outset silver;
+    caption-side: bottom;
+}
+#index caption { font-size: 9px }
+#title { font-weight: bold}
+.main { font-size: 10pt }
+#copy { text-align: center }
+fieldset {
+    width: 500px;
+}

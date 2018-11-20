@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title> 실습 10-3 </title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            function display_me() {
+                document.write("학번 : " + this.id + "<br>");
+                document.write("이름 : " + this.name + "<br>");
+                document.write("소속 : " + this.dept + "<br>");
+            }
+
+            function Me (in1, in2, in3) { this.id = in1; this.name = in2; this.dept = in3;this.display = display_me; }
+
+            var homin = new Me("201735030", "이호민", "IT융합자율학부");
+            homin.display();
+        </script>
+    </body>
+</html>

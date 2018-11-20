@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>User Recommend</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <form method="get">
+            <fieldset class="field">
+                <legend>사용자 모델 추천 받기 (Alpha)</legend>
+                    신체 길이 : <input type="number" name="tall" min="110" max="250" setp="1" value="170"> cm<br>
+                    신체 스타일 : <input type="radio" name="body" value="upeper" id="upper" checked=true><label for="upper">상체가 더 김</label><input type="radio" name="body" value="down" id="down"><label for="down">하체가 더 김</label><input type="radio" name="body" value="bal" id="bal"><label for="bal">비슷함</label><br>
+                    선호 스타일 :
+                        <input type="radio" name="style" value="Repol" id="Repol" checked=true><label for="Repol">레플리카</label>
+                        <input type="radio" name="style" value="Naki" id="Naki"><label for="Naki">네이키드</label>
+                        <input type="radio" name="style" value="Tour" id="Tour"><label for="Tour">투어러</label>
+                        <input type="radio" name="style" value="Amer" id="Amer"><label for="Amer">아메리칸</label>
+                        <input type="radio" name="style" value="SM" id="SM"><label for="SM">수퍼 모타드</label>
+                        <input type="radio" name="style" value="SC" id="SC"><label for="SC">스쿠터</label><br>
+                    선호 메이커 :<br>
+                    <select name="maker" size="5" multiple>
+                        <option value="yamaha" selected>야마하</option>
+                        <option value="honda">혼다</option>
+                        <option value="suzuki">스즈키</option>
+                        <option value="kawasaki">카와사키</option>
+                        <option value="BWM">BWM</option>
+                        <option value="Ducati">두카티</option>
+                        <option value="kimco">킴코</option>
+                        <option value="sym">삼양모터스 (SYM)</option>
+                        <option value="daelim">대림</option>
+                        <option value="kr">KR 모터스 (효성)</option>
+                        <option value="kym">KYM</option>
+                        <option value="aprilia">아프릴라</option>
+                        <option value="notlisted">목록에 없음</option>
+                    </select>
+                    <br><br><hr>
+                    <button type="button" onclick="alert('준비중')">추천 받기</button> <button type="reset">취소</button>
+                </fieldset>
+            </form>    
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> 실습 </title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script type="text/javascript">
+
+            var book1 = "A";
+            var book2 = "B";
+            var book3 = "C";
+
+            var book_list = book1 + "\n" + book2 + "\n" + book3;
+            var choice = prompt("키워드 ㄱㄱ\n" + book_list);
+
+            switch (choice) {
+                case "A":
+                title = "참잘했어영"; break;
+                case "B":
+                title = "좋습니당"; break;
+                case "C":
+                title = "괜찮"; break;
+                default:
+                alert("뭐라냐");
+                title = "잘못햇네";
+            }
+
+            document.write(title);
+        </script>
+    </body>
+</html>
