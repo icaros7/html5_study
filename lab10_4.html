@@ -5,8 +5,14 @@
     <meta charset="utf-8">
 </head>
 <body>
+<form action="">
+    <input id="name" type="text" value="너의 이름"/>
+</form>
 <script type="text/javascript">
-
+    var dom = document.getElementById("name");
+    alert(dom.value);
+    var newValue = prompt("텍스트 박스에 새로운 이름 입력해주세요.");
+    dom.value = newValue;
 </script>
 </body>
 </html>
