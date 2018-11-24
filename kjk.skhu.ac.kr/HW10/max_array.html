@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title> 과제 10 </title>
+</head>
+<body>
+<script type="text/javascript">
+    var arr = [];
+    var i = 0;
+    while (true) {
+        arr[i] = prompt('숫자를 입력해주세요~\n\n끝내시려면 end 를 입력 해 주세요.');
+        if (arr[i] === 'end') {
+            arr.pop();
+            break;
+        }
+        i++;
+    }
+    document.write("최대값 : " + Math.max.apply(null, arr));
+</script>
+</body>
+</html>
