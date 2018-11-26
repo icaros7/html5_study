@@ -5,14 +5,22 @@
     <meta charset="utf-8">
 </head>
 <body>
-<form action="">
-    <input id="name" type="text" value="너의 이름"/>
-</form>
 <script type="text/javascript">
-    var dom = document.getElementById("name");
-    alert(dom.value);
-    var newValue = prompt("텍스트 박스에 새로운 이름 입력해주세요.");
-    dom.value = newValue;
+    var stopped = false;
+    function start() {
+        dom = document.getElementById("sec");
+        dom.value = parseFloat(dom.value) + 1/10;
+        dom.value = Math.round(dom.value);
+        if (!stopped) setTimeout(start,100);
+    }
 </script>
+<h2> 스톱워치 </h2>
+<form action="">
+    <input type="button" value="시작" onclick="stopped=false; setTimeout(start,100);"
+    />
+    <input type="button" value="멈춤" onclick="stopped=true;" />
+    <input type="reset"/> <br><br>
+    <input id="sec" type="text" value="0.0" size="2"/> seconds
+</form>
 </body>
 </html>

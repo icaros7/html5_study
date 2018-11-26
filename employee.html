@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title> 실습 과제 4 </title>
+    <meta charset="utf-8">
+</head>
+<body>
+<script type="text/javascript">
+    document.write('<h1>Employee</h1>');
+    document.write('<table border="1">');
+    document.write('<th>사번</th><th>이름</th><th>직책</th>');
+    function display_employee() {
+        document.write('<tr>');
+        document.write('<td>' + this.id + '</td><td>' + this.name + '</td><td>' + this.title + '</td>');
+        document.write('</tr>');
+    }
+    function employee(id, name, title) {
+        this.id = id;
+        this.name = name;
+        this.title = title;
+        this.display = display_employee;
+    }
+    var human1 = new employee(2106, "김창섭", "대리");
+    var human2 = new employee(3426, "박영권", "과장");
+    var human3 = new employee(1003, "이수민", "부장");
+    human1.display();
+    human2.display();
+    human3.display();
+    document.write('</table>');
+
+</script>
+</body>
+</html>
