@@ -2,9 +2,30 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title> 실습 10-7</title>
 </head>
 <body>
-$END$
+<button id="b1">이호민</button>
+<button id="b2">안녕?</button>
+<br/>
+<p id="text">곧 없어질 텍스트...</p>
+<script type="text/javascript" >
+    document.getElementById("b1").onmouseover = mouseover_innerHTML;
+    document.getElementById("b2").onmouseover = mouseover_innerText;
+    document.getElementById("b1").onmouseout = reset_text;
+    document.getElementById("b2").onmouseout = reset_text;
+    function mouseover_innerHTML() {
+        document.getElementById("text").innerHTML =
+            "<h1>이호민</h1>";
+    }
+    function mouseover_innerText() {
+        document.getElementById("text").innerText =
+            "응 안녕!!";
+    }
+    function reset_text() {
+        document.getElementById("text").innerHTML =
+            "<h4>이호민</h4>";
+    }
+</script>
 </body>
 </html>

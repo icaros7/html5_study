@@ -5,16 +5,13 @@
     <title> 예제 6 </title>
 </head>
 <body>
-<div id="outerBox" style="background: blue; width: 550px; height:300px;" />
+<div id="outerBox" style="background: black; width: 550px; height:300px;" />
 <div id="innerBox"
-     style="background: yellow; width: 450px; height:200px;
+     style="background: red; width: 450px; height:200px;
             position: absolute; left: 50px; top: 50px;" />
-<img id="img1" src="lab10_6/image1.png" width="100px"
-     style="position: absolute; left: 50px; top: 25px; visibility: visible;" />
-<img id="img2" src="lab10_6/image2.png" width="100px"
-     style="position: absolute; left: 175px; top: 25px; visibility: visible;" />
-<img id="img3" src="lab10_6/image3.png" width="100px"
-     style="position: absolute; left: 300px; top: 25px; visibility: visible;" />
+<p id="img1" style="position: absolute; left: 50px; top: 25px; visibility: visible;">안녕?</p>
+<p id="img2" style="position: absolute; left: 175px; top: 25px; visibility: visible;">헐안녕!</p>
+<p id="img3" style="position: absolute; left: 300px; top: 25px; visibility: visible;">나도!</p>
 </div>
 </div>
 <script type = "text/javascript">
@@ -26,9 +23,9 @@
             dom.style.visibility = "visible";
     }
 </script>
-Toggle Visibility:
-<button onclick = "toggleVisibility('img1');">Image 1</button>
-<button onclick = "toggleVisibility('img2');">Image 2</button>
-<button onclick = "toggleVisibility('img3');">Image 3</button>
+가시성 토글:
+<button onclick = "toggleVisibility('img1');">안녕</button>
+<button onclick = "toggleVisibility('img2');">헐안녕</button>
+<button onclick = "toggleVisibility('img3');">나도</button>
 </body>
 </html>
