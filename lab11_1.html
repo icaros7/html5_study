@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title> 실습 예제 11-1 </title>
+</head>
+<body>
+<canvas id="myCanvas" width="300" height="200"></canvas>
+
+<script type="text/javascript">
+    var canvas = document.getElementById("myCanvas");
+    var myContext = canvas.getContext("2d");
+
+    myContext.beginPath();
+    myContext.arc(240, 100, 60, 0, 2*Math.PI); // 360도 원호를 그려 원 그리기
+    myContext.moveTo(180, 100);
+    myContext.lineTo(360,100);
+    myContext.moveTo(240, 40);
+    myContext.lineTo(240, 160);
+    myContext.closePath();
+    myContext.stroke();
+</script>
+</body>
+</html>
