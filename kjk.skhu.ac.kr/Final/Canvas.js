@@ -1,4 +1,4 @@
-var myContext = document.getElementById("myCanvas").getContext("2d");
+const myContext = document.getElementById("myCanvas").getContext("2d");
 
 myContext.strokeStyle = 'rgb(255, 255, 255)';
 myContext.lineWidth=10;

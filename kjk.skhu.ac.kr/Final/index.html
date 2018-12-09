@@ -6,128 +6,167 @@
     <link rel="stylesheet" type="text/css" href="index.css"/>
 </head>
 <body>
-<canvas id="myCanvas" width="1000" height="300"></canvas>
-<script src="Canvas.js"></script>
-<h1><p id="b1">모터사이클 시장</p></h1>
-<p id="MyNum"></p>
-<hr><br>
-<script type="text/javascript">
-    document.getElementById("b1").onmouseover = mouseover_AssListV;
-    document.getElementById("b1").onmouseout = reset_text;
-    function toggleVisibility(id) {
-        var dom = document.getElementById(id);
-        if (dom.style.visibility === "visible")
-            dom.style.visibility = "hidden";
-        else
-            dom.style.visibility = "visible";
-    }
-    function mouseover_AssListV() {
-        document.getElementById("MyNum").AssListV = "201735030 이호민";
-    }
-    function reset_text() {
-        document.getElementById("MyNum").AssListV = "";
-    }
-</script>
-<h2>&lt;차례&gt;</h2>
-<p>
-<table id="index">
-    <caption>&lt;201735030 이호민&gt;</caption>
-    <tr>
-        <td rowspan="3" width="150px">주 문서</td><td width="380px"><li class="index">국내에서 최초로 생산된 모델</li></td>
-    </tr>
-    <tr>
-        <td><li class="index">국내 시장에 있어 모터사이클이란</li></td>
-    </tr>
-    <tr>
-        <td><li class="index">사용자 모델 추천 받기 (Alpha)</li></td>
-    </tr>
-    <tr>
-        <td rowspan="1">참조 문서</td><td><li class="index"><a href="http://www.d-motorcycle.com/kor/company/intro/info_3.do?year=4" target="_blank">대림 모터스 역사관</a></li></td>
-    </tr>
-</table>
-<h3>국내에서 최초로 생산된 모델</h3>
-<figure>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Honda_Super_Cub_C100_-_Tokyo_Motor_Show_2013.jpg" width="816" height="612" alt="대림자동차 C100">
-    <p>
-        대림자동차 C100 (1962년)
-    </p>
-</figure>
-<div class="main">
-    <p>국내 모터사이클의 역사에도 한획을 그었던 국내의 최초 모델이다. <br>
-        그 주인공의 모델은 현재의 기아자동차의 이륜차 사업부인 대림자동차에서 생산한 C100 모델이다.
-    </p>
-    <span id="title"><h3>국내 시장에 있어 모터사이클이란</h3></span>
-    <p>
-        국내 시장에서 모터사이클의 역활은 이전에는 저소득층의 교통 수단으로 자리 잡고 있었다.<br>
-        하지만 1980년대 후반에 들어서며, 청소년들의 비행 수단으로 자리잡게 되며 국내 시장에도 크나큰 영향을 미쳤다.<br>
-    </p>
-    <h3><li><a href="http://www.d-motorcycle.com/kor/company/intro/info_3.do?year=4" target="_blank">참조 - 대림 모터스 역사관</a></li></h3>
-</div>
-<p>
-<form method="get">
-    <fieldset class="field">
-        <legend>사용자 모델 추천 받기 (Alpha)</legend>
-        신체 길이 : <input type="number" name="tall" min="110" max="250" setp="1" value="170"> cm<br>
-        신체 스타일 : <input type="radio" name="body" value="upeper" id="upper" checked=true><label for="upper">상체가 더 김</label><input type="radio" name="body" value="down" id="down"><label for="down">하체가 더 김</label><input type="radio" name="body" value="bal" id="bal"><label for="bal">비슷함</label><br>
-        선호 스타일 :
-        <input type="radio" name="style" value="Repol" id="Repol" checked=true><label for="Repol">레플리카</label>
-        <input type="radio" name="style" value="Naki" id="Naki"><label for="Naki">네이키드</label>
-        <input type="radio" name="style" value="Tour" id="Tour"><label for="Tour">투어러</label>
-        <input type="radio" name="style" value="Amer" id="Amer"><label for="Amer">아메리칸</label>
-        <input type="radio" name="style" value="SM" id="SM"><label for="SM">수퍼 모타드</label>
-        <input type="radio" name="style" value="SC" id="SC"><label for="SC">스쿠터</label><br>
-        선호 메이커 :<br>
-        <select name="maker" size="5" multiple>
-            <option value="yamaha" selected>야마하</option>
-            <option value="honda">혼다</option>
-            <option value="suzuki">스즈키</option>
-            <option value="kawasaki">카와사키</option>
-            <option value="BWM">BWM</option>
-            <option value="Ducati">두카티</option>
-            <option value="kimco">킴코</option>
-            <option value="sym">삼양모터스 (SYM)</option>
-            <option value="daelim">대림</option>
-            <option value="kr">KR 모터스 (효성)</option>
-            <option value="kym">KYM</option>
-            <option value="aprilia">아프릴라</option>
-            <option value="notlisted">목록에 없음</option>
-        </select>
-        <br><br><hr>
-        <button type="button" onclick="alert('준비중')">추천 받기</button> <button type="reset">취소</button>
-    </fieldset>
-</form>
-<br><hr>
-<p><button onclick = "toggleVisibility('AssList');">과제 목록 여닫기</button></p><br>
-<table id='AssList'>
-    <tr>
-        <td>
-            <li><a href="../HW1/HW1.html">과제1</a></li>
-            <li><a href="../HW2/HW2.html">과제2</a></li>
-            <li><a href="../HW3/HW3.html">과제3</a></li>
-            <li><a href="../HW4/HW4.html">과제4</a></li>
-            <li><a href="../HW5/HW5.html">과제5</a></li>
-            <li><a href="../HW6/HW6.html">과제6</a></li>
-            <li><a href="../201735030_이호민_과제7.zip">과제7</a></li>
-            <li><a href="../201735030_이호민_과제8.zip">과제8</a></li>
-            <li><a href="../201735030_이호민_과제9.zip">과제9</a></li>
-            <li><a href="../201735030_이호민_과제10.zip">과제10</a></li>
-            <li><a href="../201735030_이호민_과제11.zip">과제11</a></li>
-            <li><a href="../HW12/HW12.html">과제12</a></li>
-        </td>
-    </tr>
-</table>
-<script type="text/javascript">
-    document.getElementById("b1").onmouseover = mouseover_innerHTML;
-    document.getElementById("b1").onmouseout = reset_text;
-    function mouseover_innerHTML() {
-        document.getElementById("MyNum").innerHTML = "201735030 이호민";
-    }
-    function reset_text() {
-        document.getElementById("MyNum").innerHTML = "";
-    }
-</script>
-<br>
-<hr><hr>
-<p id="copy">Copyright (C) 2018 hominlab@minnote.net All Right Reserved</p>
+    <div style="display: inline-block">
+        <canvas id="myCanvas" width="700" height="300"></canvas>
+        <script src="Canvas.js"></script>
+    </div>
+    <div id="logo">
+        <h1><p id="b1">모터사이클 시장</p></h1>
+    </div>
+    <hr>
+    <script type="text/javascript">
+        function toggleVisibility(id) {
+            const dom = document.getElementById(id);
+            if (dom.style.visibility === "hidden")
+                dom.style.visibility = "visible";
+            else
+                dom.style.visibility = "hidden";
+        }
+        function indexReMatch() {
+            var index = document.getElementById('AssListBar');
+            if (window.innerWidth < '1600') {
+                index.style.left = 0 + 'px';
+                if (window.innerHeight < '900') {
+                    index.style.top = 550 + 'px';
+                }
+                else {
+                    index.style.top = 60 + '%';
+                }
+            }
+            else {
+                index.style.left = window.innerWidth - 500 + 'px';
+                index.style.top = 35 + '%';
+            }
+        }
+        const today = new Date();
+        const c100 = new Date(1962,1,1);
+        window.onload = function() {
+            indexReMatch();
+            window.addEventListener('resize', indexReMatch);
+        }
+    </script>
+    <div id="AssListBar">
+        <fieldset class="FieldAssList">
+            <legend>과제 목록</legend>
+            <button id="b2">과제 목록 감추기</button><br><hr>
+            <div id="AssList">
+                <li><a href="../HW1/HW1.html">과제1</a></li>
+                <li><a href="../HW2/HW2.html">과제2</a></li>
+                <li><a href="../HW3/HW3.html">과제3</a></li>
+                <li><a href="../HW4/HW4.html">과제4</a></li>
+                <li><a href="../HW5/HW5.html">과제5</a></li>
+                <li><a href="../HW6/HW6.html">과제6</a></li>
+                <li><a href="../201735030_이호민_과제7.zip">과제7</a></li>
+                <li><a href="../201735030_이호민_과제8.zip">과제8</a></li>
+                <li><a href="../201735030_이호민_과제9.zip">과제9</a></li>
+                <li><a href="../201735030_이호민_과제10.zip">과제10</a></li>
+                <li><a href="../201735030_이호민_과제11.zip">과제11</a></li>
+                <li><a href="../HW12/HW12.html">과제12</a></li>
+            </div>
+        </fieldset>
+        <br><br>
+    </div>
+    <div id="container">
+        <div id="sidebar">
+            <h2>&lt;차례&gt;</h2>
+            <table id="index">
+                <caption>&lt;201735030 이호민&gt;</caption>
+                <tr>
+                    <td rowspan="3" width="100px">주 문서</td><td width="300px"><li class="index">국내에서 최초로 생산된 모델</li></td>
+                </tr>
+                <tr>
+                    <td><li class="index">국내 시장에 있어 모터사이클이란</li></td>
+                </tr>
+                <tr>
+                    <td><li class="index">사용자 모델 추천 받기 (Alpha)</li></td>
+                </tr>
+                <tr>
+                    <td rowspan="1">참조 문서</td><td><li class="index"><a href="http://www.d-motorcycle.com/kor/company/intro/info_3.do?year=4" target="_blank">대림 모터스 역사관</a></li></td>
+                </tr>
+            </table>
+        </div>
+        <div id="contents">
+            <h2>국내에서 최초로 생산된 모델</h2>
+            <figure>
+                <img id="img" src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Honda_Super_Cub_C100_-_Tokyo_Motor_Show_2013.jpg" width="816" height="612" alt="대림자동차 C100">
+                <p>
+                    대림자동차 C100 (1962년, 현재 출시 된지
+                    <script type="text/javascript">
+                        document.write(today.getFullYear() - c100.getFullYear() + "년 지남)");
+                    </script>
+                </p>
+            </figure>
+            <div class="main">
+                <p>국내 모터사이클의 역사에도 한획을 그었던 국내의 최초 모델이다. <br>
+                    그 주인공의 모델은 현재의 기아자동차의 이륜차 사업부인 대림자동차에서 생산한 C100 모델이다.
+                </p>
+                <br>
+                <span id="title"><h2>국내 시장에 있어 모터사이클이란</h2></span>
+                <p>
+                    국내 시장에서 모터사이클의 역활은 이전에는 저소득층의 교통 수단으로 자리 잡고 있었다.<br>
+                    하지만 1980년대 후반에 들어서며, 청소년들의 비행 수단으로 자리잡게 되며 국내 시장에도 크나큰 영향을 미쳤다.<br><br><br>
+            </div>
+            <hr><br>
+            <form method="get">
+                <fieldset id="Field">
+                    <legend>사용자 모델 추천 받기 (Alpha)</legend>
+                    신체 길이 : <label><input type="number" name="tall" min="110" max="250" setp="1" value="170"></label> cm<br>
+                    신체 스타일 : <input type="radio" name="body" value="upeper" id="upper" checked=true><label for="upper">상체가 더 김</label><input type="radio" name="body" value="down" id="down"><label for="down">하체가 더 김</label><input type="radio" name="body" value="bal" id="bal"><label for="bal">비슷함</label><br>
+                    선호 스타일 :
+                    <input type="radio" name="style" value="Repol" id="Repol" checked=true><label for="Repol">레플리카</label>
+                    <input type="radio" name="style" value="Naki" id="Naki"><label for="Naki">네이키드</label>
+                    <input type="radio" name="style" value="Tour" id="Tour"><label for="Tour">투어러</label>
+                    <input type="radio" name="style" value="Amer" id="Amer"><label for="Amer">아메리칸</label>
+                    <input type="radio" name="style" value="SM" id="SM"><label for="SM">수퍼 모타드</label>
+                    <input type="radio" name="style" value="SC" id="SC"><label for="SC">스쿠터</label><br>
+                    선호 메이커 :<br>
+                    <select name="maker" size="5" multiple>
+                        <option value="yamaha" selected>야마하</option>
+                        <option value="honda">혼다</option>
+                        <option value="suzuki">스즈키</option>
+                        <option value="kawasaki">카와사키</option>
+                        <option value="BWM">BWM</option>
+                        <option value="Ducati">두카티</option>
+                        <option value="kimco">킴코</option>
+                        <option value="sym">삼양모터스 (SYM)</option>
+                        <option value="daelim">대림</option>
+                        <option value="kr">KR 모터스 (효성)</option>
+                        <option value="kym">KYM</option>
+                        <option value="aprilia">아프릴라</option>
+                        <option value="notlisted">목록에 없음</option>
+                    </select>
+                    <br><br><hr>
+                    <button type="submit">추천 받기</button> <button type="reset">취소</button>
+                </fieldset>
+            </form>
+            <br><hr><br>
+            <h3><li><a href="http://www.d-motorcycle.com/kor/company/intro/info_3.do?year=4" target="_blank">참조 - 대림 모터스 역사관</a></li></h3><br>
+        </div>
+        <div id="forsidebar">
+
+        </div>
+    </div>
+    <div id="copy">
+        <hr>
+        Copyright (C) 2018 hominlab@minnote.net All Right Reserved
+    </div>
+    <script type="text/javascript">
+        document.getElementById("b1").onmouseover = mouseover_innerHTML;
+        document.getElementById("b1").onmouseout = reset_text;
+        document.getElementById("b2").onmouseover = mouseover_innerText;
+        document.getElementById("b2").onmouseout = toggle_text;
+        function mouseover_innerHTML() {
+            document.getElementById("b1").innerHTML = "201735030 이호민";
+        }
+        function reset_text() {
+            document.getElementById("b1").innerHTML = "모터사이클 시장";
+        }
+        function mouseover_innerText() {
+            toggleVisibility('AssList');
+        }
+        function toggle_text() {
+            toggleVisibility('AssList');
+        }
+    </script>
 </body>
 </html>

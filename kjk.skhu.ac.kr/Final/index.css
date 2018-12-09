@@ -1,41 +1,108 @@
-
-body { 
+body {
     background-color:rgb(20,20,20);
     font-family: '맑은 고딕', serif;
     color: rgb(255,255,255);
 }
-a:link { color: white; text-decoration: underline; }
-a:visited{ color: rgb(100,100,100) }
+
+a:link {
+    color: white;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: rgb(100,100,100);
+}
+
 H1 {
     font-size: 36pt;
-    text-shadow: 5px 1px 12px blue
+    text-shadow: 5px 1px 12px blue;
+    transition: font-size 1s;
 }
-H2 { font-size: 24pt }
-li.index { list-style-type: disc }
+
+H1:Hover {
+    font-size: 80pt;
+    transition: font-size 1s;
+}
+
+H2 {
+    font-size: 24pt;
+}
+
+li.index {
+    list-style-type: disc;
+}
+
+li.AssList {
+    list-style-type: disc
+}
+
+.FieldAssList {
+    border: medium double white;
+    border-radius: 10px;
+    width: 200px;
+}
+
+.main {
+    font-size: 10pt;
+}
+
 #index {
-    font-size: 14pt;
-    font-weight: bold;
-    border-collapse: separate;
+    font-size: 10pt;
     empty-cells: hide;
-    border-spacing: 4px;
-    border: thick outset silver;
     caption-side: bottom;
+    width: 400px;
+    margin: 0 auto;
+    border: medium double white;
+    border-radius: 10px;
+    border-spacing: 5px;
 }
-#index caption { font-size: 9px }
-li.AssList { list-style-type: disc }
-#AssList {
-    font-size: 14pt;
+
+#index caption {
+    font-size: 9px;
+}
+
+#Field {
+    border: medium double white;
+    border-radius: 10px;
+}
+
+#logo {
+    display: inline-block;
+    margin-left: 60px;
+}
+
+#title {
     font-weight: bold;
-    border-collapse: separate;
-    empty-cells: hide;
-    border-spacing: 4px;
-    border: thick outset silver;
-    caption-side: bottom;
-    width: 30%;
+    margin-left: 20px;
 }
-#title { font-weight: bold}
-.main { font-size: 10pt }
-#copy { text-align: center }
-fieldset {
+
+#myCanvas {
     width: 500px;
+    margin: 0 auto;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+}
+
+#contents {
+    text-align: left;
+    margin: 20px;
+}
+
+#sidebar {
+    margin: 20px;
+}
+
+#AssListBar {
+    margin-left: 25px;
+    position: fixed;
+    display: inline-block;
+    top: 4%;
+    left: 70%;
+}
+
+#copy {
+    text-align: center;
 }
